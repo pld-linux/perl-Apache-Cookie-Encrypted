@@ -9,7 +9,7 @@ Summary:	Apache::Cookie::Encrypted - encrypted HTTP cookies class
 Summary(pl):	Apache::Cookie::Encrypted - klasa szyfrowanych ,,cookie'' HTTP
 Name:		perl-Apache-Cookie-Encrypted
 Version:	0.03
-Release:	4
+Release:	5
 # same as Apache::Cookie or perl
 License:	GPL v1+ or Artistic or Apache Software License 1.1
 Group:		Development/Languages/Perl
