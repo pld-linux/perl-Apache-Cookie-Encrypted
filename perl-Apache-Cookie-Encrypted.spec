@@ -1,0 +1,62 @@
+%include	/usr/lib/rpm/macros.perl
+Summary:	Apache::Cookie::Encrypted perl module 
+Summary(cs):	Modul Apache::Cookie::Encrypted pro Perl
+Summary(da):	Perlmodul Apache::Cookie::Encrypted
+Summary(de):	Apache::Cookie::Encrypted Perl Modul
+Summary(es):	Módulo de Perl Apache::Cookie::Encrypted
+Summary(fr):	Module Perl Apache::Cookie::Encrypted
+Summary(it):	Modulo di Perl Apache::Cookie::Encrypted
+Summary(ja):	Apache::Cookie::Encrypted Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Apache::Cookie::Encrypted ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Apache::Cookie::Encrypted
+Summary(pl):	Modu³ perla Apache::Cookie::Encrypted
+Summary(pt_BR):	Módulo Perl Apache::Cookie::Encrypted
+Summary(pt):	Módulo de Perl Apache::Cookie::Encrypted
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Apache::Cookie::Encrypted
+Summary(sv):	Apache::Cookie::Encrypted Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Apache::Cookie::Encrypted
+Summary(zh_CN):	Apache::Cookie::Encrypted Perl Ä£¿é
+Name:		perl-Apache-Cookie-Encrypted
+Version:	0.03
+Release:	1
+License:	GPL/Artistic
+Group:		Development/Languages/Perl
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Apache/ApacheCookieEncrypted-%{version}.tar.gz
+BuildRequires:	perl >= 5
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+Apache::Cookie::Encrypted is a subclass of Apache::Cookie.  It takes
+the value you put in to the cookie and automaticaly encrypts it.
+It automaticaly decrypts it when the value is retrieved.  Other than
+that it behaves just like Apache::Cookie.
+
+%description -l pl
+Apache::Cookie::Encrypted jest podklas± Apache::Cookie.  Ka¿da warto¶æ,
+zapisywana w ,,cookie'' jest automatycznie szyfrowana przy wysy³aniu
+i deszyfrowana po otrzymaniu; poza tym modu³ zachowuje siê tak samo,
+jak Apache::Cookie.
+
+%prep
+%setup -q -n ApacheCookieEncrypted-%{version}
+
+%build
+echo '!' | perl Makefile.PL
+%{__make}
+#%{__make} test
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc Changes README
+%{perl_sitelib}/Apache/Cookie/Encrypted.pm
+%{_mandir}/man3/*
