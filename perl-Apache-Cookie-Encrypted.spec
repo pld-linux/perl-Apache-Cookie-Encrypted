@@ -24,6 +24,7 @@ Release:	4
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
+# Source0-md5:	d8dac472f79ccfc33418423137f1d4bb
 BuildRequires:	perl-devel >= 5
 BuildRequires:	perl-Crypt-Blowfish >= 2.06
 BuildRequires:	perl-Crypt-CBC >= 1.25
