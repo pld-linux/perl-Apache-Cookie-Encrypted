@@ -10,7 +10,7 @@ Summary(fr):	Module Perl Apache::Cookie::Encrypted
 Summary(it):	Modulo di Perl Apache::Cookie::Encrypted
 Summary(ja):	Apache::Cookie::Encrypted Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Apache::Cookie::Encrypted ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Apache::Cookie::Encrypted
+Summary(nb):	Perlmodul Apache::Cookie::Encrypted
 Summary(pl):	Modu³ perla Apache::Cookie::Encrypted
 Summary(pt_BR):	Módulo Perl Apache::Cookie::Encrypted
 Summary(pt):	Módulo de Perl Apache::Cookie::Encrypted
