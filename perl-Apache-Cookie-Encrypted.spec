@@ -1,5 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Apache::Cookie::Encrypted perl module 
+%define		pdir	Apache
+%define		pnam	CookieEncrypted
+Summary:	Apache::Cookie::Encrypted perl module
 Summary(cs):	Modul Apache::Cookie::Encrypted pro Perl
 Summary(da):	Perlmodul Apache::Cookie::Encrypted
 Summary(de):	Apache::Cookie::Encrypted Perl Modul
@@ -18,10 +20,10 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Apache::Cookie::Encrypted
 Summary(zh_CN):	Apache::Cookie::Encrypted Perl Ä£¿é
 Name:		perl-Apache-Cookie-Encrypted
 Version:	0.03
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Apache/ApacheCookieEncrypted-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5
 BuildRequires:	perl-Crypt-Blowfish >= 2.06
 BuildRequires:	perl-Crypt-CBC >= 1.25
@@ -34,19 +36,19 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Apache::Cookie::Encrypted is a subclass of Apache::Cookie.  It takes
-the value you put in to the cookie and automaticaly encrypts it.
-It automaticaly decrypts it when the value is retrieved.  Other than
-that it behaves just like Apache::Cookie.
+Apache::Cookie::Encrypted is a subclass of Apache::Cookie. It takes
+the value you put in to the cookie and automaticaly encrypts it. It
+automaticaly decrypts it when the value is retrieved. Other than that
+it behaves just like Apache::Cookie.
 
 %description -l pl
-Apache::Cookie::Encrypted jest podklas± Apache::Cookie.  Ka¿da warto¶æ,
-zapisywana w ,,cookie'' jest automatycznie szyfrowana przy wysy³aniu
-i deszyfrowana po otrzymaniu; poza tym modu³ zachowuje siê tak samo,
-jak Apache::Cookie.
+Apache::Cookie::Encrypted jest podklas± Apache::Cookie. Ka¿da warto¶æ,
+zapisywana w ,,cookie'' jest automatycznie szyfrowana przy wysy³aniu i
+deszyfrowana po otrzymaniu; poza tym modu³ zachowuje siê tak samo, jak
+Apache::Cookie.
 
 %prep
-%setup -q -n ApacheCookieEncrypted-%{version}
+%setup -q -n %{pdir}%{pnam}-%{version}
 
 %build
 echo '!' | perl Makefile.PL
@@ -64,5 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_sitelib}/Apache/Cookie
 %{perl_sitelib}/Apache/Cookie/Encrypted.pm
 %{_mandir}/man3/*
