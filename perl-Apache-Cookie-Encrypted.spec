@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic or Apache Software License 1.1
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 # Source0-md5:	d8dac472f79ccfc33418423137f1d4bb
-BuildRequires:	perl-devel >= 5
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Crypt-Blowfish >= 2.06
 BuildRequires:	perl-Crypt-CBC >= 1.25
 BuildRequires:	perl-libapreq >= 0.01
