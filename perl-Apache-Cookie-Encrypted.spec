@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Apache
-%define		pnam	CookieEncrypted
+%define	pdir	Apache
+%define	pnam	CookieEncrypted
 Summary:	Apache::Cookie::Encrypted - encrypted HTTP cookies class
 Summary(pl):	Apache::Cookie::Encrypted - klasa szyfrowanych ,,cookie'' HTTP
 Name:		perl-Apache-Cookie-Encrypted
