@@ -23,6 +23,9 @@ License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Apache/ApacheCookieEncrypted-%{version}.tar.gz
 BuildRequires:	perl >= 5
+BuildRequires:	perl-Crypt-Blowfish >= 2.06
+BuildRequires:	perl-Crypt-CBC >= 1.25
+BuildRequires:	perl-libapreq >= 0.01
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 Requires:	perl(Crypt::Blowfish) >= 2.06
 Requires:	perl(Crypt::CBC)      >= 1.25
