@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Apache
-%define	pnam	CookieEncrypted
+%define		pdir	Apache
+%define		pnam	CookieEncrypted
 Summary:	Apache::Cookie::Encrypted - encrypted HTTP cookies class
 Summary(pl):	Apache::Cookie::Encrypted - klasa szyfrowanych ,,cookie'' HTTP
 Name:		perl-Apache-Cookie-Encrypted
@@ -21,8 +21,8 @@ BuildRequires:	perl-Crypt-CBC >= 1.25
 BuildRequires:	perl-libapreq >= 0.01
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl(Crypt::Blowfish) >= 2.06
-Requires:	perl(Crypt::CBC)      >= 1.25
-Requires:	perl(Apache::Cookie)  >= 0.01
+Requires:	perl(Crypt::CBC) >= 1.25
+Requires:	perl(Apache::Cookie) >= 0.01
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
