@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl Apache::Cookie::Encrypted
 Summary(zh_CN):	Apache::Cookie::Encrypted Perl дё©И
 Name:		perl-Apache-Cookie-Encrypted
 Version:	0.03
-Release:	3
+Release:	4
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
@@ -28,7 +28,7 @@ BuildRequires:	perl >= 5
 BuildRequires:	perl-Crypt-Blowfish >= 2.06
 BuildRequires:	perl-Crypt-CBC >= 1.25
 BuildRequires:	perl-libapreq >= 0.01
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Requires:	perl(Crypt::Blowfish) >= 2.06
 Requires:	perl(Crypt::CBC)      >= 1.25
 Requires:	perl(Apache::Cookie)  >= 0.01
