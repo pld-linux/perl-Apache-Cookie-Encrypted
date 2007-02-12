@@ -6,7 +6,7 @@
 %define		pdir	Apache
 %define		pnam	CookieEncrypted
 Summary:	Apache::Cookie::Encrypted - encrypted HTTP cookies class
-Summary(pl):	Apache::Cookie::Encrypted - klasa szyfrowanych ,,cookie'' HTTP
+Summary(pl.UTF-8):   Apache::Cookie::Encrypted - klasa szyfrowanych ,,cookie'' HTTP
 Name:		perl-Apache-Cookie-Encrypted
 Version:	0.03
 Release:	5
@@ -32,10 +32,10 @@ the value you put in to the cookie and automaticaly encrypts it. It
 automaticaly decrypts it when the value is retrieved. Other than that
 it behaves just like Apache::Cookie.
 
-%description -l pl
-Apache::Cookie::Encrypted jest podklas± Apache::Cookie. Ka¿da warto¶æ,
-zapisywana w ,,cookie'' jest automatycznie szyfrowana przy wysy³aniu i
-rezszyfrowywana po otrzymaniu; poza tym modu³ zachowuje siê tak samo,
+%description -l pl.UTF-8
+Apache::Cookie::Encrypted jest podklasÄ… Apache::Cookie. KaÅ¼da wartoÅ›Ä‡,
+zapisywana w ,,cookie'' jest automatycznie szyfrowana przy wysyÅ‚aniu i
+rezszyfrowywana po otrzymaniu; poza tym moduÅ‚ zachowuje siÄ™ tak samo,
 jak Apache::Cookie.
 
 %prep
