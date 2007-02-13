@@ -6,7 +6,7 @@
 %define		pdir	Apache
 %define		pnam	CookieEncrypted
 Summary:	Apache::Cookie::Encrypted - encrypted HTTP cookies class
-Summary(pl.UTF-8):   Apache::Cookie::Encrypted - klasa szyfrowanych ,,cookie'' HTTP
+Summary(pl.UTF-8):	Apache::Cookie::Encrypted - klasa szyfrowanych ,,cookie'' HTTP
 Name:		perl-Apache-Cookie-Encrypted
 Version:	0.03
 Release:	5
