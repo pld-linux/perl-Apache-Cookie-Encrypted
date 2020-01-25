@@ -4,7 +4,6 @@
 
 %define		pdir	Apache
 %define		pnam	CookieEncrypted
-%include	/usr/lib/rpm/macros.perl
 Summary:	Apache::Cookie::Encrypted - encrypted HTTP cookies class
 Summary(pl.UTF-8):	Apache::Cookie::Encrypted - klasa szyfrowanych ,,cookie'' HTTP
 Name:		perl-Apache-Cookie-Encrypted
